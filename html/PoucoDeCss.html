@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="PoucoDeCss.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um pouco de Css</title>
+    <style>
+        h1 {
+            font-size: 20px;
+        }
+
+        .fundoVermelho{
+            background-color: red;
+        }
+
+        .negrito {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css</h1>
+    <span id="TextoPrincipal" style="display:none;">Texto1</span><br><br><br>
+    <span class="fundoVermelho negrito">Texto2</span><br><br>
+    <span class="fundoVermelho negrito" wb-atrib>Texto3</span>
+    <!-- Para pegar um atributo personalizado: document.querySelector('[wb-atrib]') -->
+</body>
+</html>
