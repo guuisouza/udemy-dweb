@@ -6,6 +6,32 @@
     <title>Especificidade CSS</title>
     <style>
         /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+        /* 
+            Em linhas gerais...
+
+            1. regra com !important
+            2. seletores mais específicos.
+            3. última regra processada (empate)
+        */
+
+        p {
+            background-color: gray;
+        }
+
+        
+
+        .observacao {
+            background-color: #f5f5;
+            border: dashed 5px;
+            padding: 200px;
+            font-size: 40px;
+        }
+
+        p.observacao { /*Esse tem maior grau de especificidade que o acima */
+            padding: 2px;
+            background: linear-gradient(to right, red, yellow);
+        }
+        
     </style>
 </head>
 
