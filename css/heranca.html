@@ -5,7 +5,22 @@
     <meta charset="UTF-8">
     <title>Herança</title>
     <style>
-        /* ... */
+        /* Algumas propriedades são por padrão transmitidas
+            por herança e outras não e você precisa dizer que quer herdar
+        */
+
+        body {
+            font-family: 'Oswald', sans-serif;
+            font-size: 40px;
+            border: solid 3px rgb(130, 172, 158);
+            padding: 50px;
+            margin: 10px 80px 10px 100px;
+        }
+
+        div {
+           border: inherit; /* Pede para herdar do body */
+           padding: inherit; /* Pede para herdar do body */
+        }
     </style>
 </head>
 
